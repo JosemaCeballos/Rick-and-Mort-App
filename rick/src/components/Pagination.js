@@ -1,7 +1,7 @@
 import React from "react";
 
 export const Pagination = ({ prev, next, onPrevious, onNext }) => {
-  const handlePrevios = () => {
+  const handlePrevious = () => {
     onPrevious();
   };
 
@@ -14,7 +14,7 @@ export const Pagination = ({ prev, next, onPrevious, onNext }) => {
       <ul className="pagination justify-content-center">
         {prev ? (
           <li className="page-item">
-            <button className="page-link" onClick={handlePrevios}>
+            <button className="page-link" onClick={handlePrevious}>
               Previous
             </button>
           </li>

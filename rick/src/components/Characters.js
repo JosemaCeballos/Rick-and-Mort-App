@@ -33,19 +33,25 @@ const Characters = ({ characters = [] }) => {
           }
         })
         .map((item, i) => (
-          <div key={i} className="col mb-4">
+          <div key={i} className="col mb-4 border-0">
             <div className="card" style={{ minWidth: "200px" }}>
               <div className="title" onClick={() => toggle(i)}>
-                <img src={item.image} alt=""  className="card-img-top"/>
+                <img
+                  src={item.image}
+                  alt=""
+                  className="card-img-top nashemiento"
+                />
               </div>
               <div className="card-boby">
                 <h5 class="card-title">{item.name} - Tap to see info</h5>
                 <div className={selected === i ? "content show" : "content"}>
                   <hr />
-                  <p>Especies: {item.species}</p>
-                  <p>Location: {item.location.name}</p>
-                  <p>Gender: {item.gender}</p>
-                  <p>Origin: {item.origin.name}</p>
+                  <div className="fs-6">
+                    <p>Especies: {item.species}</p>
+                    <p>Location: {item.location.name}</p>
+                    <p>Gender: {item.gender}</p>
+                    <p>Origin: {item.origin.name}</p>
+                  </div>
                 </div>
               </div>
             </div>
