@@ -37,7 +37,7 @@ function App() {
         <Pagination
           prev={info.prev}
           next={info.next}
-          onPrevios={onPrevious}
+          onPrevious={onPrevious}
           onNext={onNext}
         />
         <Characters characters={characters} />
