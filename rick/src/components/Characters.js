@@ -15,7 +15,7 @@ const Characters = ({ characters = [] }) => {
   return (
     <div className="row">
       <input
-        className="mb-3 form-control me-2 progress-bar"
+        className="mb-3 form-control me-2 progress-bar bg-white"
         type="text"
         placeholder="Search..."
         onChange={(event) => {
@@ -36,7 +36,7 @@ const Characters = ({ characters = [] }) => {
           <div key={i} className="col mb-4">
             <div className="card" style={{ minWidth: "200px" }}>
               <div className="title" onClick={() => toggle(i)}>
-                <img src={item.image} alt="" />
+                <img src={item.image} alt=""  className="card-img-top"/>
               </div>
               <div className="card-boby">
                 <h5 class="card-title">{item.name} - Tap to see info</h5>
